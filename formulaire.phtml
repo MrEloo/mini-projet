@@ -1,0 +1,146 @@
+<form action="index.php" method="POST">
+    <div class="partie1">
+        <div>
+            <fieldset class="info">
+                <legend>INFORMATIONS</legend>
+                <label for="nom">nom
+                    <input type="text" name="nom" id="nom">
+                </label>
+                <label for="prenom">prenom
+                    <input type="text" name="prenom" id="prenom">
+                </label>
+                <label for="email">email
+                    <input type="text" name="email" id="email">
+                </label>
+                <label for="telephone">telephone
+                    <input type="text" name="telephone" id="telephone">
+                </label>
+                <label for="linkedin">linkedin
+                    <input type="text" name="linkedin" id="linkedin">
+                </label>
+                <label for="github">github
+                    <input type="text" name="github" id="github">
+                </label>
+                <label for="bio">Bio
+                    <textarea name="bio" id="bio"></textarea>
+                </label>
+                <label for="loisir1">loisir1
+                    <input type="text" name="loisir1" id="loisir1">
+                </label>
+                <label for="loisir2">loisir2
+                    <input type="text" name="loisir2" id="loisir2">
+                </label>
+                <label for="loisir3">loisir3
+                    <input type="text" name="loisir3" id="loisir3">
+                </label>
+                <label for="loisir4">loisir4
+                    <input type="text" name="loisir4" id="loisir4">
+                </label>
+            </fieldset>
+
+            <fieldset class="langue lang">
+                <legend>Langues</legend>
+                <label for="francais">
+                    <input type="checkbox" name="langue[]" id="francais" value="francais">
+                    francais
+                </label>
+                <label for="anglais">
+                    <input type="checkbox" name="langue[]" id="anglais" value="anglais">
+                    anglais
+                </label>
+                <label for="arabe">
+                    <input type="checkbox" name="langue[]" id="arabe" value="arabe">
+                    arabe
+                </label>
+                <label for="breton">
+                    <input type="checkbox" name="langue[]" id="breton" value="breton">
+                    breton
+                </label>
+                <label for="espagnol">
+                    <input type="checkbox" name="langue[]" id="espagnol" value="espagnol">
+                    espagnol
+                </label>
+            </fieldset>
+        </div>
+    </div>
+
+    <div class="partie2">
+        <div>
+            <fieldset class="langue prog">
+                <legend>Langages de prog</legend>
+                <label for="html">
+                    <input type="checkbox" name="prog[]" id="html" value="html">
+                    html
+                </label>
+                <label for="css">
+                    <input type="checkbox" name="prog[]" id="css" value="css">
+                    css
+                </label>
+                <label for="JavaScript">
+                    <input type="checkbox" name="prog[]" id="JavaScript" value="JavaScript">
+                    JavaScript
+                </label>
+                <label for="PHP">
+                    <input type="checkbox" name="prog[]" id="PHP" value="PHP">
+                    PHP
+                </label>
+                <label for="SQL">
+                    <input type="checkbox" name="prog[]" id="SQL" value="SQL">
+                    SQL
+                </label>
+            </fieldset>
+
+            <fieldset class="langue fram">
+                <legend>Frameworks & Librairies</legend>
+                <label for="Sass">
+                    <input type="checkbox" name="frames[]" id="Sass" value="Sass">
+                    Sass
+                </label>
+                <label for="Bootstrap">
+                    <input type="checkbox" name="frames[]" id="Bootstrap" value="Bootstrap">
+                    Bootstrap
+                </label>
+                <label for="Symfony">
+                    <input type="checkbox" name="frames[]" id="Symfony" value="Symfony">
+                    Symfony
+                </label>
+                <label for="Lavarel">
+                    <input type="checkbox" name="frames[]" id="Lavarel" value="Lavarel">
+                    Lavarel
+                </label>
+            </fieldset>
+
+            <fieldset class="langue logiciel">
+                <legend>Logiciels</legend>
+                <label for="Photoshop">
+                    <input type="checkbox" name="logiciels[]" id="Photoshop" value="Photoshop">
+                    Photoshop
+                </label>
+                <label for="Illustrator">
+                    <input type="checkbox" name="logiciels[]" id="Illustrator" value="Illustrator">
+                    Illustrator
+                </label>
+                <label for="XD">
+                    <input type="checkbox" name="logiciels[]" id="XD" value="XD">
+                    XD
+                </label>
+                <label for="Figma">
+                    <input type="checkbox" name="logiciels[]" id="Figma" value="Figma">
+                    Figma
+                </label>
+            </fieldset>
+            <fieldset class="langue">
+                <label for="couleur">couleur</label>
+                <select name="couleur" id="couleur">
+                    <option value="bleu">Bleu</option>
+                    <option value="rouge">Rouge</option>
+                </select>
+            </fieldset>
+        </div>
+    </div>
+
+
+    <button id="button" type="submit">ENVOYER</button>
+
+
+</form>

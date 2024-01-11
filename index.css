@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+
+header.rouge {
+    background-color: #b50604;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+
+header.bleu {
+    background-color: #24527c;
+    text-align: center;
+    padding: 0.5em;
+    color: white;
+}
+
+h1 {
+    padding: 0.5em;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    padding: 2em;
+    width: 50%;
+    margin: 0.5rem;
+}
+
+.first-section {
+    border-right: 1px solid black;
+}
+
+.contact h4,
+.contact p {
+    margin: 0;
+    padding: 0;
+}
+
+.contact p,
+.contact a {
+    margin-left: 2rem;
+}
+
+main.rouge h3,
+main.rouge h4 {
+    color: #b50604;
+}
+
+main.bleu h3,
+main.bleu h4 {
+    color: #24527c;
+}
+
+main.rouge section h2 {
+    color: #b50604;
+}
+
+main.bleu section h2 {
+    color: #24527c;
+}
+
+.info label {
+    display: flex;
+    flex-direction: column;
+}
+
+.langue {
+    display: flex;
+    flex-direction: column;
+}
+
+.langue label {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+fieldset {
+    border: none;
+}
+
+form div {
+    width: 50%;
+}
+
+input[type="text"],
+textarea {
+    width: 13rem;
+}
+
+textarea {
+    height: 10rem;
+}
+
+button {
+    margin-left: 2rem;
+    padding-left: 5em;
+    padding-right: 5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: #24527c;
+    border: none;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+legend {
+    color: #24527c;
+    font-weight: bold;
+}
+
+#button:hover {
+    transform: scale(1.05);
+    border-radius: 0.5em;
+    transition: all 0.2s ease-in;
+}

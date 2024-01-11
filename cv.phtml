@@ -1,0 +1,113 @@
+<header class="<?= $colorChoice; ?>">
+    <h1><?= $nom . " " . $prenom; ?> </h1>
+    <h2>intitulé du poste</h2>
+</header>
+
+<main class="<?= $colorChoice; ?>">
+    <section class="first-section">
+        <h2>INFORMATIONS</h2>
+        <article class="contact">
+            <h3>Contact</h3>
+            <?php if ($email !== null) { ?>
+                <h4>Email</h4>
+                <p><?= $email; ?></p>
+            <?php } ?>
+            <?php if ($telephone !== null) { ?>
+                <h4>Télephone</h4>
+                <p><?= $telephone; ?></p>
+            <?php } ?>
+            <?php if ($linkedin !== null) { ?>
+                <h4>Linkedin</h4>
+                <a href="https://github.com/"><?= $linkedin; ?></a>
+            <?php } ?>
+            <?php if ($github !== null) { ?>
+                <h4>GitHub</h4>
+                <a href="https://www.linkedin.com/"><?= $github; ?></a>
+            <?php } ?>
+
+        </article>
+        <?php if ($bio !== null) { ?>
+            <article>
+                <h3>Biographie</h3>
+                <p><?= $bio; ?></p>
+            </article>
+        <?php } ?>
+
+        <?php if (!empty($loisirs)) { ?>
+            <article>
+                <h3>Loisirs</h3>
+                <ul>
+                    <?php foreach ($loisirs as $loisir) { ?>
+                        <li><?= $loisir; ?></li>
+                    <?php } ?>
+                </ul>
+            </article>
+        <?php } ?>
+
+
+    </section>
+    <section>
+
+        <h2>COMPETENCES</h2>
+        <?php if (!empty($programation)) { ?>
+            <article>
+                <h3>Langages de programmations</h3>
+                <ul>
+                    <?php if (!empty($programation)) { ?>
+                        <?php foreach ($programation as $key => $prog) { ?>
+                            <li><?= $prog; ?></li>
+                        <?php } ?>
+                    <?php } ?>
+                </ul>
+            </article>
+        <?php } ?>
+        <?php if (!empty($frames)) { ?>
+            <article>
+                <h3>Frameworks & Librairies</h3>
+                <ul>
+                    <?php if (!empty($frames)) { ?>
+                        <?php foreach ($frames as $key => $frame) { ?>
+                            <li><?= $frame; ?></li>
+                        <?php } ?>
+                    <?php } ?>
+                </ul>
+            </article>
+        <?php } ?>
+        <?php if (!empty($logiciels)) { ?>
+            <article>
+                <h3>Logiciels</h3>
+                <ul>
+                    <?php if (!empty($logiciels)) { ?>
+                        <?php foreach ($logiciels as $key => $logiciel) { ?>
+                            <li><?= $logiciel; ?></li>
+                        <?php } ?>
+                    <?php } ?>
+                </ul>
+            </article>
+        <?php } ?>
+        <?php if (!empty($langues)) { ?>
+            <article>
+                <h3>Langues</h3>
+                <ul>
+                    <?php if (!empty($langues)) { ?>
+                        <?php foreach ($langues as $key => $langue) { ?>
+                            <li><?= $langue; ?></li>
+                        <?php } ?>
+                    <?php } ?>
+                </ul>
+            </article>
+        <?php } ?>
+
+
+
+
+    </section>
+</main>
+
+<button id="button" onclick="handleClick()">Retour à la création</button>
+
+<script>
+    function handleClick() {
+        window.location.href = 'index.php'; // Remplacez cela par le chemin de votre page de création
+    }
+</script>
